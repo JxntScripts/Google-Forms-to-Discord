@@ -45,6 +45,7 @@ function onSubmit(e) {
             "content": "‌", // This is not an empty string
             "embeds": [{
                 "title": "TOP TEXT CHANGE THIS IN SCRIPT",
+                "color": DECIMAL_COLOR_HERE,
                 "fields": items,
                 "footer": {
                     "text": "BOTTOM TEXT CHANGE THIS IN SCRIPT"
