@@ -1,5 +1,13 @@
 var POST_URL = "WEBHOOKURL";
 
+function GenerateUUID() { 
+  return Utilities.getUuid();
+}
+
+function createUUID() {
+return Utilities.getUuid();
+}
+
 function onSubmit(e) {
     var form = FormApp.getActiveForm();
     var allResponses = form.getResponses();
@@ -45,6 +53,7 @@ function onSubmit(e) {
             "content": "‌", // This is not an empty string
             "embeds": [{
                 "title": "TOP TEXT CHANGE THIS IN SCRIPT",
+                "color": ADD_DECIMAL_COLOR_HERE,
                 "fields": items,
                 "footer": {
                     "text": "BOTTOM TEXT CHANGE THIS IN SCRIPT"
